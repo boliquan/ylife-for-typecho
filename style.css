@@ -1,0 +1,485 @@
+/**
+ * Designed by BoLiQuan(夜光). My blog is 玻璃泉. 
+ * Theme Homepage : http://boliquan.com/ylife/
+ * @package YLife for typecho 
+ * @author BoLiQuan
+ * @link http://boliquan.com/
+ */
+
+/* Body_start */
+body,h1,h2,h3,h4,p,ul,li,form,blockquote {
+	margin:0;
+	padding:0;
+}
+img {
+	border:none;
+}
+a {
+	color:#666;
+	text-decoration:none;
+}
+h1,h2,h3,h4 {
+	font-weight:normal;
+}
+ul,ol {
+	list-style:none;
+}
+body {
+	font:14px/160% Verdana,arial,Lucida,"Lucida Grande",sans-serif;
+	background:#ffffff;
+	text-align:center;
+	color:#666;
+}
+/* Body_end */
+
+/* Wrapper */
+#wrapper {
+	width:960px;
+	margin:0 auto;
+	text-align:left;
+}
+
+/* Header_Start */
+#header {
+	width:100%;
+	height:100px;
+	position:relative;
+}
+#header h1 {
+	position:absolute;
+	top:20px;
+	left:0px;
+	line-height:30px;
+}
+#header h1 a {
+	color:#666;
+	font-weight:bold;
+	font-size:30px;
+}
+#header .description {
+	position:absolute;
+	top:60px;
+	left:0px;
+	font-weight:normal;
+}
+#header .feedrss {
+	position:absolute;
+	top:36px;
+	right:0px;
+	height:40px;
+	width:160px;
+	background: #FFF url('img/rss_ylife.png') no-repeat scroll 16px 0px;
+}
+#header .feedrss a {
+	color:#666;
+	font-weight:bold;
+	line-height:32px;
+	padding:0 0 0 52px;
+}
+/* Header_End */
+
+/* Navigation_Start*/
+#navigation {
+	width:100%;
+	border-top:1px dashed #999;
+	border-bottom:1px dashed #999;
+	position:relative;
+	
+}
+#navigation ul {
+	height: 35px;
+	line-height: 35px;
+}
+#navigation ul li {
+	display:inline;
+}
+#navigation a {
+	float:left;
+	display:block;
+	padding:0 15px;
+	color:#666;
+}
+#navigation li.current_page_item a, #navigation a:hover {
+	background-color:#f5f5f5;
+	border-left:1px dashed #999;
+	border-right:1px dashed #999;
+}
+/*searchform*/
+#navigation li.searchform {
+	position:absolute;
+	right:0;
+}
+#navigation .searchform div {
+	margin:3px 0 3px 0;
+}
+#navigation .searchform input.inputarea {
+	position:absolute;
+	right:40.9px;
+	display:block;
+	border:1px inset #ccc;
+	background:#FFF;
+	width: 211px;
+	height: 25px;
+}
+#navigation .searchform input.searchmenu {
+	display: block;
+	border:none;
+	background:#666;
+	color:#fff;
+	width:41px;
+	height:29px;
+}
+/* Navigation_End*/
+
+/* Content_wrapper */
+#content_wrapper {
+	margin:20px 0;
+}
+/* content */
+#content {
+	width:646px;
+	float:left;
+}
+
+#content h4 {
+	font-size:12px;
+}
+#content h4 a {
+	color:#666;
+	background:#f8f8f8;
+}
+#content h4 a:hover {
+	text-decoration:underline;
+	color:#262626;
+}
+#content .post {
+	margin-bottom:20px;
+}
+.post h2 {
+	color:#666;
+	font-weight:bold;
+	font-size:16px;
+	font-style:normal;
+}
+.post h2 a {
+	color: #666;
+	font-size: 16px;
+	font-weight:bold;
+	font-style:normal;
+	display:block;
+	padding-bottom:3px;
+	border-bottom:1px dashed #ccc;
+}
+.post h2 a:hover {
+	color:#363636;
+	margin-left:1px;
+}	
+.post_content {
+	letter-spacing:0px;
+	margin:1px 0;
+}
+.post_content p a {
+	color:#666;
+	background-color:#f5f5f5;
+}
+.post_content p a:hover {
+	text-decoration:underline;
+	color:#262626;
+}
+.post_content p{margin:8px 0;}
+.post_content h1{font-size:16px;}
+.post_content h2{font-size:14px;}
+.post_content h3{font-size: 12px;}
+.post_content h4{font-size: 10px;}
+.post_content blockquote{border: 1px dashed #CCC;background-color:#F8F8F8;margin:10px 10px 10px 0px;padding:0 10px;}
+.post_content ol,ul{list-style-type:square;}
+.post_content li{list-style-type:none; margin:0 1px;}
+.post_content li:before{ content: "\00BB \0020";}
+
+/* Single */
+#postmetadata {
+	font-size:12px;
+	border-top:1px dashed #ccc;
+	padding:2px 6px 2px 0px;
+	margin-bottom:0px;
+}
+#postmetadata a {
+	text-decoration:none;
+	color:#666;
+	background:#f8f8f8;
+}
+#postmetadata a:hover {
+	text-decoration:underline;
+	color:#262626;
+}
+.statement {
+	background:#FFF url('img/statement.gif') no-repeat 0px center;
+	font-size:12px;
+	margin-bottom:3px;
+}
+.statement p {
+	padding-left:19px;
+}
+.statement a {
+	color:#666;
+	background-color:#f8f8f8;
+}
+#postnavi {
+	background-color:#F5F5F5;
+	padding:11px 11px 11px 3px;
+}
+#postnavi a:hover {
+	text-decoration:underline;
+}
+#postnavi .prevpost a {
+	background:url(img/left_arrow.gif) 2px 1px no-repeat;
+	color:#262626;
+	margin:3px 0 2px 0;
+	padding-left:17px;
+	float:left;
+	height:18px;
+	line-height:18px;
+}
+#postnavi .nextpost a {
+	background:url(img/right_arrow.gif) 100% 1px no-repeat;
+	color:#262626;
+	margin:2px 60px 4px 0;
+	padding-right:15px;
+	float:right;
+	height:18px;
+	line-height:18px;
+}
+
+/* Sidebar_Start */
+#sidebar {
+	width:307px;
+	float:right;
+	font-size:95%;
+	line-height:145%;
+	overflow:hidden;
+}
+#sidebar li {
+	background:url(img/sidebar-li.gif) no-repeat scroll 0px 2px;
+	padding-left:17px;
+	list-style:none;
+	margin-top:4px;
+}
+#sidebar .content, 
+#sidebar li {
+	font-size:14px;
+}
+#sidebar a {
+	color:#666;
+	background:#f8f8f8;
+}
+#sidebar a:hover {
+	text-decoration:underline;
+	color:#262626;
+}
+#sidebar .widget {
+	background:#fff;
+	border:1px dashed #999;
+	margin-bottom:10px;
+}
+#sidebar .widget h3 {
+	border-bottom:1px dashed #999;
+	height:32px;
+	color:#666;
+	font-weight:bold;
+	line-height:32px;
+	padding:0 10px;
+	background:#f5f5f5; 
+	text-decoration:none; 
+	font-size:14px; 
+	font-family:Verdana,arial,Lucida,"Lucida Grande",sans-serif;
+}
+#sidebar .widget ul {
+	padding:8px 10px;
+}
+#sidebar {
+	font-size:95%;
+}
+#sidebar .widget .content p {
+	margin-bottom:10px; padding:5px;
+}
+/* Sidebar_End */
+
+/* Footer_Start */
+#footer {
+	height:80px;
+	margin-top:10px;
+	font-size:14px;
+	line-height:145%;
+	width:100%;
+	float:left;
+	position:relative;
+}
+#footer a {
+	color:#666;
+	background:#F8F8F8;
+}
+#footer a:hover {
+	color:#262626;
+}
+#copyright {
+	margin-top:16px;
+	margin-left:0px;
+}
+#themeinfo {
+	margin-left:0px;
+}
+a#gotop {
+	background:url(img/go-top-ylife.gif) 3px 0 no-repeat;
+	position:absolute;
+	right:0;
+	height:18px;
+	line-height:18px;
+	display:block;
+	padding-left:16px;
+	margin:20px 360px 0 0;
+	text-decoration:none;
+}
+/* Footer_End */
+
+/*Comment_List_Start*/
+.guestbook {
+	border:1px solid #f5f5f5;
+	margin-top:15px;
+	width:646px;
+}
+.guestbook a {
+	color:#666;
+	background:#f1f1f1;
+}
+#comments, #response, #commentclosed {
+	font-size:14px;
+	height:30px;
+	line-height:30px;
+	padding-left:15px;
+	background-color:#f5f5f5;
+	border-bottom: 1px solid #f5f5f5;
+}
+.commentlist {
+	margin: 0;
+	padding: 0;
+}
+.commentlist li {
+	border:1px solid #f5f5f5;
+	background-color:#F5F5F5;
+	margin:10px 10px 10px -30px;
+}
+.avatar {
+	margin:10px 0 0 10px;
+	border:1px solid #ccc;
+}
+.comment-author cite a {
+	font-style:normal;
+}
+.commentlist li .comment-meta {
+	font-size:10px;
+	margin:0 0 2px 10px;
+}
+.commentlist li p {
+	margin:3px 0 3px 10px;
+}
+.comment-reply {
+	margin:0 0 10px 10px;
+}
+.cancel-comment-reply {
+	margin:0 0 0 10px;
+}
+/*Comment_List_End*/
+
+/*Comment_Area_Start*/
+.comment_area {
+	border:1px solid #f5f5f5;
+	margin-top:15px;
+	padding-bottom:46px;
+}
+.comment_area a {
+	color:#666;
+	background:#f8f8f8;
+}
+#guestbook_form { 
+	margin:12px 0 12px 10px;
+	padding:0;
+	position:relative;
+}
+#guestbook_form #author,
+#guestbook_form #mail,
+#guestbook_form #url {
+	margin: 0 0 8px 0 !important;
+}
+#guestbook_form #author,
+#guestbook_form #mail,
+#guestbook_form #url {
+	border:1px solid #bbb;
+	width:185px;
+	height:17px;
+	padding:3px 3px 3px 3px;
+	font-family: Verdana,arial,Lucida,"Lucida Grande",sans-serif;
+	font-size:14px;
+	color:#666;	
+	background:#fff;
+}
+#guestbook_form .textarea {
+	border:1px solid #bbb;
+	width:96.8%;
+	height:150px;
+	padding:5px 4px 7px 4px;
+	font-family: Verdana,arial,Lucida,"Lucida Grande",sans-serif;
+	font-size:14px;
+	color:#666;	
+	background:#fff;
+}
+#guestbook_form .submit {
+	border:none;
+	background:#666;
+	color:#fff;
+	width:62px;
+	height:26px;
+	float:right;
+	margin:6px 11px 0 0;
+	padding:1px;
+}
+/*Comment_Area_End*/
+
+/*page-navigator_start*/
+ol.page-navigator {
+	margin: 40px 0 20px 0px;
+	color: #666;
+	list-style: none;
+	font-size: 12px;
+	line-height: 30px;
+	font-family: Verdana,arial,Lucida,"Lucida Grande",sans-serif;
+}
+
+ol.page-navigator li {
+	margin: 0 5px 0 0;
+	display: inline;
+}
+ol.page-navigator li a {
+	padding: 2px 6px;
+	border: 1px solid #eee;
+	text-decoration: none;
+}
+ol.page-navigator li a:hover {
+	padding: 2px 6px;
+	border: 1px solid #eee;
+	text-decoration: none;
+	background: #666;
+	color:#fff;
+}
+ol.page-navigator li.current a {
+	background: #fff;
+	border-color: #8d8d8d;
+	color:#393939;
+}
+/*page-navigator_end*/
+
+.clearfix {
+	clear:both;
+	height:0;
+	padding:0;
+	margin:0;
+}
