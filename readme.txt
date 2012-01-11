@@ -25,7 +25,6 @@ YLife For Typecho
 * YLife For Typecho
 
 
-
 == Screenshots ==
 
 1. Admin page screenshot
